@@ -1,0 +1,548 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+/* 
+=====================
+header
+===================== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    position: relative;
+}
+
+h1 {
+    font-weight: bolder;
+    text-shadow: 1px 1px;
+   
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+nav a {
+   
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* 
+=============================
+mobile-menu
+============================= */
+
+
+.menu-mobile {
+    display: none;
+}
+
+.nav-mobile {
+   display: none;
+   position: absolute;
+   right: 30px;
+   top: 70px;
+   background-color: rgb(157, 157, 157);
+   
+}
+.nav-mobile a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: rgb(82, 82, 82);
+    font-weight: bold;
+    border: 1px solid gray;
+    
+}
+.menu-mobile input {
+    display: none;
+}
+.menu-mobile label {
+margin: 0;
+}
+
+#check:checked ~ .nav-mobile {
+   display: block;
+}
+
+
+/* 
+==================
+main
+================== */
+main {
+    padding: 3rem 4rem;
+}
+.container-text-01 {
+    width: 50%;
+}
+
+.main-heading-01 {
+    font-size: 3rem;
+    text-shadow: 2px 1px;
+    margin: 1.5rem 0;
+}
+
+.sub-heading-01 {
+margin-bottom: 3rem;
+font-size: 1.5rem;
+color: gray;
+}
+/* 
+==================
+gallery
+================== */
+.gallery {
+   
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.project-card {
+    width: 48%;
+}
+
+.project-card img {
+    width: 100%;
+}
+
+.project-card h3 {
+margin-top: 0.5rem;
+font-size: 1.5rem;
+font-weight: 400;
+}
+.project-card p {
+margin-top: 0.3rem;
+color: gray;
+font-size: 1.1rem;
+}
+
+/* 
+=======================
+footer
+======================= */
+
+footer {
+   
+    padding: 0 4rem;
+    
+}
+.container-footer-01 {
+    display: flex;
+    justify-content: space-between;
+  border-top: 1px solid rgb(218, 218, 218);
+  padding: 2rem 0;
+  gap: 2rem;
+
+}
+
+/* ================== */
+
+.container-logo-links {
+   width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.container-logo-links h2 {
+    font-weight: 400;
+    text-shadow: none;
+    text-wrap: nowrap;
+}
+
+/* ============== */
+
+.container-footer-links {
+    width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 30%;
+}
+
+.footer-link a {
+    color: gray;
+}
+.footer-link h3 {
+    font-weight: 400;
+}
+
+
+/* 
+==============================================================================
+projects
+============================================================================== */
+.logo-simple {
+    text-shadow: none;
+    font-weight: 400;
+}
+
+.main-heading-01-projects {
+font-size: 3rem;
+margin: 1rem 0;
+}
+
+
+.container-project-image img {
+    width: 100%;
+    
+}
+.container-project-desc {
+    margin: 3rem auto;
+    width: 59%;
+    text-align: center;
+}
+
+.container-project-desc p {
+    font-size: 1.25rem;
+    margin: 2rem 0;
+    
+    
+}
+
+.container-project-slides {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-project-slides img {
+    width: 49%;
+}
+
+
+.container-related-projects {
+    padding: 1rem 0;
+    padding-bottom: 5rem;
+}
+.haeding-related-projects {
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.container-project-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.related-project-card {
+    width: 32%;
+}
+.related-project-card img {
+    width: 100%;
+}
+
+.related-project-card h3 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.related-project-card p {
+    font-size: 1.25rem;
+    color: gray;
+}
+/* 
+==============================================================================================================
+about
+============================================================================================================== */
+
+.container-info-img {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    flex-wrap: wrap;
+}
+.container-text-about {
+    width: 42%;
+}
+.conatiner-image-about {
+width: 45%;
+}
+
+.conatiner-image-about img {
+    width: 100%;
+}
+.about-heading {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.about-sub-heading {
+    color: gray;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.about-text {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* 
+========================================================================================================================
+contact
+======================================================================================================================== */
+
+.container-form-img {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container-form {
+    width: 42%;
+}
+.container-image-form {
+    width: 45%;
+} 
+.container-image-form img {
+width: 100%;
+}
+form {
+    padding: 1rem 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.container-f-l-name {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+input {
+    margin-bottom: 1.5rem;
+}
+
+.container-f-name, .container-l-name {
+width: 100%;
+}
+
+input:not(textarea) {
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 5px;
+   height: 40px;
+   padding: 0.5rem;
+    width: 100%;
+}
+
+input[type="submit"] {
+    margin: 1.5rem 0;
+    background-color: black;
+    color: white;
+    font-size: 1.25;
+    font-weight: 500;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 5px;
+    padding: 0.5rem;
+    height: 180px;
+}
+
+/* 
+=======================================================================
+media queries
+======================================================================= */
+
+
+
+@media screen and (max-width: 1100px) {
+    /* 
+===================
+about
+==================== */
+.container-info-img {
+    padding: 0;
+}
+.header-about, .main-about, .footer-about {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.container-text-about {
+    width: 50%;
+}
+.container-image-about {
+    width: 40%;
+}
+
+    /* 
+===================
+contact
+==================== */
+.container-form {
+    width: 50%;
+}
+.container-form .about-heading, .about-sub-heading{
+    text-align: center;
+   
+}
+}
+
+
+
+
+
+
+@media screen and (max-width: 930px) {
+
+.container-text-01 {
+    width: 100%;
+    text-align: center;
+}    
+.gallery {
+    flex-direction: column;
+}
+
+.project-card {
+    width: 100%;
+}
+
+/* 
+==============
+projects
+============== */
+.container-project-desc {
+    width: 90%;
+    
+}
+
+    /* 
+===================
+about
+==================== */
+.container-info-img {
+    gap: 1rem;
+}
+.container-text-about {
+    width: 50%;
+}
+    /* 
+===================
+contact
+==================== */
+.container-form-img {
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.container-image-form {
+    width: 100%;
+} 
+.container-image-form img {
+    height: 150px;
+    object-fit: cover;
+}
+.container-form {
+    width: 100%;
+}
+
+
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 760px) {
+     header, main, footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+     }
+.footer-link {
+    width: 33%;
+}
+.container-logo-links {
+    width: 35%;
+}
+.container-footer-links {
+width: 60%;
+}
+
+    /* 
+==============
+projects
+============== */
+.container-project-desc {
+    width: 100%;
+    
+ }
+ .container-project-slides {
+     gap: 1rem;
+ }
+ .container-project-slides img {
+     width: 100%;
+ }
+
+ .related-project-card {
+  width: 100%;
+}
+/* 
+===================
+about
+==================== */
+
+.container-text-about  {
+    width: 100%;
+    text-align: center;
+}
+.conatiner-image-about {
+    width: 100%;
+}
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .nav-header {
+        display: none;
+    }
+    .menu-mobile {
+        display: flex;
+        align-items: center;
+    }
+    .social-links {
+        gap: 0;
+        justify-content: space-between;
+    }
+}
+
+
+
